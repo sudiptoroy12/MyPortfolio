@@ -1,0 +1,124 @@
+.contact {
+  height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.textContainer2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.textContainer2 > h1 {
+  font-size: 90px;
+  line-height: 82px;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.items span {
+  font-weight: 300;
+}
+.items h2 {
+  font-weight: 500;
+}
+.formContainer1 {
+  flex: 1;
+  position: relative;
+}
+.phoneSvg {
+  position: absolute;
+  margin: auto;
+  stroke: purple;
+  z-index: -1;
+}
+form {
+  gap: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  width: 600px;
+  gap: 20px;
+}
+.form button {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+.contactbtn:hover{
+  background: linear-gradient(45deg,#3f0028,#582300);
+  color:gray;
+}
+
+@media  (max-width: 768px) {
+  .contact {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  
+  }
+  .textContainer2 {
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+  .textContainer2 > h1 {
+    font-size: 40px;
+  }
+  
+  input,
+  textarea {
+    
+    width: 400px;
+    
+  }
+  .phoneSvg {
+    width: 350px;
+  }
+}
+
+@media (min-width:769px)and (max-width:1024px){
+  .contact {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  
+  }
+  .textContainer2 {
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+  .textContainer2 > h1 {
+    font-size: 70px;
+  }
+ 
+}
+
+@media (min-width:1025px)and (max-width:1344px){
+  .contact {
+    
+    max-width: 1000px;
+  }
+  .textContainer2 > h1 {
+    font-size: 80px;
+  }
+   
+}

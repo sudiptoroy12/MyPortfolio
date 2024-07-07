@@ -1,0 +1,28 @@
+.nav {
+    background: rgba(0, 0,0, 0.3);
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    bottom:0;
+    padding: 0.7rem 1.7rem;
+    gap: 2rem;
+    z-index:1;
+   
+   
+}
+.nav a.active{
+    
+    transform: scale(2);
+    color: gray;
+    
+}
+.nav a{
+    padding: 10px;
+    color: white;
+}
+.nav a :hover{
+   color: gray;
+}

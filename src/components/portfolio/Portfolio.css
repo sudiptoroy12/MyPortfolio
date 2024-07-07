@@ -1,0 +1,138 @@
+section {
+  height: 78vh;
+}
+
+.portfolio {
+  position: relative;
+}
+.progress {
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 36px;
+  height: 20.5vh;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progressBar {
+  height: 1.5vh;
+  background-color: white;
+  margin-top: 0;
+}
+
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 70px;
+}
+.wrapper {
+  max-width: 900px;
+  display: flex;
+  height: 100%;
+  gap: 20px;
+}
+.imageContainer {
+  flex: 1;
+  height: 60%;
+}
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.textContainer1 {
+  flex: 1;
+  display: flex;
+  height: 60%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 50px;
+}
+.textContainer1 > h2 {
+  font-size: 50px;
+  margin: 0;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textContainer1 p {
+  font-size: 15px;
+}
+.textContainer1 > button {
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+}
+.portbtn:hover{
+  background: linear-gradient(45deg,#3f0028,#582300);
+  color:gray;
+}
+.textContainer1 :hover {
+
+  color:gray;
+}
+
+
+@media  (max-width: 768px) {
+  .progress {
+  
+   font-size: 24px;
+ 
+  }
+  .progressBar {
+    height: 1vh;
+   
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .imageContainer {
+    width: 100%;
+    max-height: 300px;
+  }
+  .textContainer1 {
+   transform: none !important;
+   padding: 10px;
+   align-items: center;
+   text-align: center;
+   
+  }
+  .textContainer1 > h2 {
+    font-size: 40px;
+    
+  }
+}
+
+@media (min-width:769px)and (max-width:1024px){
+  .progress {
+  
+    font-size: 28px;
+    margin-top: 40PX;
+   }
+   .progressBar {
+    height: 1.2vh;
+   
+  }
+   .imageContainer{
+   height: 50%;
+   margin-left: 40PX;
+  }
+   
+}

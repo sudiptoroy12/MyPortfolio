@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+header {
+  height: 90vh;
+  padding-top: 0.5rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+  gap: 40px;
+}
+.header__container h2 {
+  font-size: 30px;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 10px;
+}
+.header__container h1 {
+  font-size: 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.cv {
+  margin-top: 10px;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  right: 8rem;
+  bottom: 10rem;
+}
+.header__social a {
+  color: white;
+}
+.header__social a :hover {
+  transform: scale(1.07);
+  color: gray;
+}
+
+.me {
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  height: 30rem;
+  width: 24rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-56%);
+  margin: 20px;
+  border-radius: 12rem 12rem 0 0;
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
+  overflow: hidden;
+}
+
+.scroll__down {
+  position: absolute;
+  right: 6.4rem;
+  bottom: 6rem;
+}
+.slidingTextContainer {
+  position: absolute;
+  font-size: 50vh;
+  bottom: -170px;
+  white-space: nowrap;
+  color: #ffffff09;
+  width: 50%;
+  font-weight: bold;
+  z-index: -1;
+}
+.contactBtn:hover{
+  background: linear-gradient(45deg,#3f0028,#582300);
+  color:gray;
+}
+
+@media  (max-width: 768px) {
+  header {
+    height: 90vh;
+    padding:0;
+    width: 100%;
+    
+
+  }
+  .scroll__down { 
+    
+    margin-right: -100px;
+    width: 50px;
+  
+  }
+  .header__social a{
+    margin-right: -200px;
+  }
+  
+  
+}

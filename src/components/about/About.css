@@ -1,0 +1,235 @@
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.about_title {
+  position: relative;
+}
+.about_title h1 {
+  padding: 0px 30px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.about_title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 150px;
+}
+.about_sections {
+  display: flex;
+  gap: 115px;
+}
+.about .about_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.aboutImg {
+  margin-left: 100px;
+  height: 400px;
+  width: 400px;
+  border-radius: 50px;
+  transform: rotate(5deg);
+}
+.about_left :hover {
+  transform: rotate(0);
+}
+.about_right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.about_cards {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  text-align: center;
+}
+.about_card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  color: white;
+  padding: 20px;
+  gap: 10px;
+  text-align: center;
+  width: 200px;
+}
+.about_cards :hover {
+  background: linear-gradient(45deg,#3f0028,#582300);
+  color:gray;
+  
+}
+.about_icon {
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+.about_card h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.about_card small {
+  font-size: 16px;
+  font-weight: 200;
+}
+.about_para {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.about_para :hover{
+    color: gray;
+}
+.about_skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about_skill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.about_skill p {
+  min-width: 150px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about_skill hr {
+  border: none;
+  height: 6px;
+  width: 50%;
+  outline: none;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  border-radius: 50px;
+}
+.about_skills :hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+@media(max-width:768px){
+  .about{
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: center;
+    height: 100vh;
+    transform: none !important;
+   
+  }
+  .about_title h1{
+    font-size: 30px;
+    padding: 0;
+  }
+  .about_title img{
+    width: 100px;
+    right:-20px
+  }
+  .about_sections{
+    flex-direction: column;
+  }
+
+  .about .about_left{
+    display: none;
+  }
+ 
+  .about_para{
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    width: 95%;
+    
+  }
+  .about_skill{
+    gap:20px;
+    align-items: center;
+    width:85%;
+    margin-left: 30px;
+    
+  }
+  .about_skill p{
+    font-size: 13px;
+   
+  }
+  .about_skill p {
+    min-width: 100px;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .about_skill hr{
+    height: 4px;
+    
+  }
+  .about_cards {
+   align-items: center;
+    gap: 10px;
+    width: 95%;
+    margin-left: 25px;
+  }
+  .about_card {
+    align-items: center;
+
+    width: 130px;
+    
+  }
+  .about_icon {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+}
+
+@media (min-width:769px)and (max-width:1024px){
+  .about{
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: center;
+    height: 100vh;
+   
+  }
+  .about_title h1{
+    font-size: 40px;
+    
+  }
+  .about_sections{
+    flex-direction: column;
+  }
+  .about .about_left{
+    display: none;
+  }
+  .about_cards {
+    
+     gap: 20px;
+    width: 100%;
+   }
+  
+}
+
+@media (min-width:1025px)and (max-width:1405px){
+  .about_sections {
+   
+    gap: 30px;
+  }
+  .aboutImg {
+    margin-left: 10px;
+    height: 300px;
+    width: 300px;
+  }
+  .about_cards {
+    
+    gap: 20px;
+   width: 100%;
+  }
+}
